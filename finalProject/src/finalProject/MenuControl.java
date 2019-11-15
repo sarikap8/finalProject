@@ -50,24 +50,31 @@ public class MenuControl extends JFrame {
 	 * Create the frame.
 	 */
 	public MenuControl() {
-
-		JLabel lblCongratsYouFound = new JLabel("Congrats, you found the disabled message. Click on me to make me bold for fun!");
-		lblCongratsYouFound.setFont(new Font("SignPainter", Font.PLAIN, 17));
-		lblCongratsYouFound.setEnabled(false);
-		lblCongratsYouFound.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				lblCongratsYouFound.setEnabled(true);
-			}
-		});
-
-		getContentPane().add(lblCongratsYouFound, BorderLayout.CENTER);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		getContentPane().setBackground(new Color(72, 209, 204));
 		
 		JLabel lblNewLabel = new JLabel("Welcome to Sarika's collection of work! Please refer to the menu bar ");
+		
 		getContentPane().add(lblNewLabel, BorderLayout.NORTH);
+		
+		JLabel lblNewLabel_1 = new JLabel("Click here :D");
+		lblNewLabel_1.setEnabled(false);
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (lblNewLabel_1.isEnabled() == true) {
+
+				lblNewLabel_1.setEnabled(false);
+				}
+				else {
+					lblNewLabel_1.setEnabled(true);
+				}
+				}		
+		});
+
+		lblNewLabel_1.setIcon(new ImageIcon("/Users/1861657/Downloads/clown-face_1f921.png"));
+		getContentPane().add(lblNewLabel_1, BorderLayout.CENTER);
 		
 		
 		
