@@ -23,6 +23,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import java.awt.SystemColor;
 
 public class PalindromeUI extends MenuControl {
 
@@ -59,6 +60,7 @@ public class PalindromeUI extends MenuControl {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(72, 209, 204));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -98,7 +100,7 @@ public class PalindromeUI extends MenuControl {
 		pali_resultIJ = new JTextField();
 		pali_resultIJ.setBackground(Color.WHITE);
 		pali_resultIJ.setEditable(false);
-		pali_resultIJ.setBounds(6, 84, 420, 38);
+		pali_resultIJ.setBounds(6, 90, 420, 38);
 		contentPane.add(pali_resultIJ);
 		pali_resultIJ.setColumns(10);
 		
@@ -115,6 +117,17 @@ public class PalindromeUI extends MenuControl {
 		pali_resultReplace.setColumns(10);
 		pali_resultReplace.setBounds(6, 200, 420, 38);
 		contentPane.add(pali_resultReplace);
+		
+		JLabel lblWithIAnd = new JLabel("With I and J loops");
+		lblWithIAnd.setBounds(6, 76, 145, 16);
+		contentPane.add(lblWithIAnd);
+		
+		JLabel lblWithRecursion = new JLabel("With Recursion");
+		lblWithRecursion.setBounds(6, 128, 108, 16);
+		contentPane.add(lblWithRecursion);
+		
+		JLabel lblWithReplacement = new JLabel("With Replacement");
+		lblWithReplacement.setBounds(6, 184, 122, 16);
+		contentPane.add(lblWithReplacement);
 	}
-
 }

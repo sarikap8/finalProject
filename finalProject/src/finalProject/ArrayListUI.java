@@ -25,6 +25,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.SystemColor;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
 
 public class ArrayListUI extends MenuControl {
 	/**
@@ -34,6 +36,8 @@ public class ArrayListUI extends MenuControl {
 	private JPanel contentPane;
 	private JTextField integer_input;
 	private JTextArea integer_result;
+	private JLabel lblLookAtResulting;
+	private JScrollPane scrollPane;
 
 	/**
 	 * Launch the application.
@@ -59,12 +63,13 @@ public class ArrayListUI extends MenuControl {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(72, 209, 204));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		JLabel lblIntegerCanidate = new JLabel("Enter Integer to search for here");
-		lblIntegerCanidate.setBounds(6, 0, 184, 26);
+		lblIntegerCanidate.setBounds(6, 0, 313, 26);
 		contentPane.add(lblIntegerCanidate);
 
 		integer_input = new JTextField();
@@ -83,17 +88,23 @@ public class ArrayListUI extends MenuControl {
 		});
 		btnTestPrime.setBounds(152, 49, 145, 29);
 		contentPane.add(btnTestPrime);
-
-		integer_result = new JTextArea();
-		integer_result.setWrapStyleWord(true);
-		integer_result.setBackground(Color.WHITE);
-		integer_result.setLineWrap(true);
-		integer_result.setToolTipText("");
-		integer_result.setEditable(false);
-		integer_result.setBounds(6, 82, 420, 149);
-		contentPane.add(integer_result);
-		integer_result.setColumns(10);
+		
+		lblLookAtResulting = new JLabel("Look at resulting first prime number and all primes until it here");
+		lblLookAtResulting.setBounds(6, 234, 420, 16);
+		contentPane.add(lblLookAtResulting);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(24, 90, 402, 132);
+		contentPane.add(scrollPane);
+						
+								integer_result = new JTextArea();
+								scrollPane.setViewportView(integer_result);
+								integer_result.setWrapStyleWord(true);
+								integer_result.setBackground(Color.WHITE);
+								integer_result.setLineWrap(true);
+								integer_result.setToolTipText("");
+								integer_result.setEditable(false);
+								integer_result.setColumns(10);
 
 	}
-
 }
