@@ -125,6 +125,16 @@ public class MenuControl extends JFrame {
 			}
 		});
 		mnNewMenu.add(mntmArrayListTest);
+		
+		JMenuItem mntmJumpers = new JMenuItem("Jumpers");
+		mntmJumpers.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jumperGUI frame = new jumperGUI(); 
+				frame.setVisible(true); 
+				
+			}
+		});
+		mnNewMenu.add(mntmJumpers);
 
 }
 	}
