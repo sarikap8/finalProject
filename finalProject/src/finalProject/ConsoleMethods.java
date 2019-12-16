@@ -27,5 +27,12 @@ public class ConsoleMethods {
 	   Scanner input = new Scanner(System.in);
 	   return input.nextInt();
    }
+
+public static char inputChar(String txt) {
+	System.out.println(txt);
+	Scanner input = new Scanner(System.in);
+	String test = input.nextLine(); 
+	return test.charAt(0); 
+}
 	   
 }

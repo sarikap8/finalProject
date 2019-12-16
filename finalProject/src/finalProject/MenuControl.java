@@ -108,7 +108,7 @@ public class MenuControl extends JFrame {
 		});
 		mnSprint.add(mntmCalculator);
 		
-		JMenuItem mntmArrayList = new JMenuItem("ArrayList");
+		JMenuItem mntmArrayList = new JMenuItem("ArrayList Search Algo");
 		mntmArrayList.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ArrayListUI frame = new ArrayListUI();
@@ -117,15 +117,14 @@ public class MenuControl extends JFrame {
 		});
 		mnNewMenu.add(mntmArrayList);
 		
-		JMenuItem mntmInputs = new JMenuItem("Inputs");
-		mntmInputs.addActionListener(new ActionListener() {
+		JMenuItem mntmArrayListTest = new JMenuItem("ArrayList Test");
+		mntmArrayListTest.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				jumperGUI frame = new jumperGUI();
-				frame.setVisible(true);			
+				AP_UI frame = new AP_UI(); 
+				frame.setVisible(true);
 			}
 		});
-		mnNewMenu.add(mntmInputs);
-		
-	}
-	
+		mnNewMenu.add(mntmArrayListTest);
+
 }
+	}
