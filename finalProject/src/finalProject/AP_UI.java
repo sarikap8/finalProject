@@ -39,7 +39,7 @@ public class AP_UI extends MenuControl {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 445, 450);
         contentPane = new JPanel();
-        contentPane.setBackground(new Color(0, 206, 209));
+        contentPane.setBackground(new Color(176, 196, 222));
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
