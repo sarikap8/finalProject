@@ -117,6 +117,15 @@ public class MenuControl extends JFrame {
 			}
 		});
 		mnNewMenu.add(mntmJumpers);
+		
+		JMenuItem mntmPlayerStatsLinked = new JMenuItem("Player Stats Linked List");
+		mntmPlayerStatsLinked.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				linkedListUI frame = new linkedListUI(); 
+				frame.setVisible(true);
+			}
+		});
+		mnNewMenu.add(mntmPlayerStatsLinked);
 
 }
 	}
