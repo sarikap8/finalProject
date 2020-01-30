@@ -121,7 +121,7 @@ public class MenuControl extends JFrame {
 		JMenuItem mntmPlayerStatsLinked = new JMenuItem("Player Stats Linked List");
 		mntmPlayerStatsLinked.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				linkedListUI frame = new linkedListUI(); 
+				playerStats frame = new playerStats(); 
 				frame.setVisible(true);
 			}
 		});
