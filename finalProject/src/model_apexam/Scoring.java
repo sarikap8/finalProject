@@ -10,6 +10,7 @@ import model_apexam.Scoring;
  */
 abstract class Scoring
 {
+	//this class is not intended to have a main method - 1/30/2020
     private static int totalCorrect = 0;  // class variables
     private static int totalQuestions = 0;
     

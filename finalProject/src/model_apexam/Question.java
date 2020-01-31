@@ -10,6 +10,8 @@ import control.ConsoleMethods;
  * @author (John Mortensen)
  * @version (1.0)
  */
+
+//this class is not intended to have a main method - 1/30/2020
 public class Question extends Scoring
 {
 	// question setup values

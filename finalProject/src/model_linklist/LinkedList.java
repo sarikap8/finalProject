@@ -1,5 +1,5 @@
 package model_linklist;
-
+//this class does not need a main method 
 public class LinkedList {
 	private Object opaqueObject;
 	private LinkedList prevNode;

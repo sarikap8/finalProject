@@ -5,6 +5,7 @@ import java.util.Random;
 
 import control.ConsoleMethods;
 import model_apexam.Question;
+import view.AP_UI;
 
 
 public class ArrayListRandom extends Question {
@@ -17,16 +18,8 @@ public class ArrayListRandom extends Question {
 		Question q = new ArrayListRandom();
 		q.askQuestionConsole();
 		return q.getCounterMsg();
-	}
-
-	/*public String[] switchAnswers(String optionA, String optionB) {
-		String temp = optionA;
-		optionA = optionB;
-		optionB = temp;
-		String[] ew = { optionA, optionB };
-		return ew;
-	}*/
-
+	} 
+	
 	@Override
 	protected void setupQuestionData() {
         ConsoleMethods.println("ArrayList class setupQuestionData method");
@@ -61,6 +54,11 @@ public class ArrayListRandom extends Question {
 		}
 
 
+	}
+	//added main
+	public static void main(String[] args) {
+		AP_UI frame = new AP_UI();
+		frame.setVisible(true);
 	}
 }
 

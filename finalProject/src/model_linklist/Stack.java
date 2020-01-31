@@ -1,7 +1,7 @@
 package model_linklist;
 
 import java.util.*;
-
+//this class does not need a main method
 public class Stack {
 	private LinkedList lifo;
 

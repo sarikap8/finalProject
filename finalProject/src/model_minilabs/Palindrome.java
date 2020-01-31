@@ -1,6 +1,7 @@
 package model_minilabs;
 
 import control.ConsoleMethods;
+import view.PalindromeUI;
 
 /* used Mr. M's code to implement algorithm with my own GUI */
 public class Palindrome
@@ -193,6 +194,10 @@ public class Palindrome
         
 		// Java recursion acts funny if True and Recursion are not at the end, thus placement and use of indexes
 		return ( ((rindex - lindex) > 2) ? palindromeTestRecurse(shrinker.substring(lindex,rindex), ++step) : true );		
+	}
+	public static void main(String[] args) {
+		PalindromeUI frame = new PalindromeUI();
+		frame.setVisible(true);
 	}
     
 }

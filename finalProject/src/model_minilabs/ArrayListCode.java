@@ -9,6 +9,8 @@ package model_minilabs;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import view.ArrayListUI;
+
 public class ArrayListCode
 {
     
@@ -96,5 +98,10 @@ public class ArrayListCode
      return primeResultNumber + "\n" + listOfPrimes(input).toString(); 
      //print out the entire ArrayList. Should only be one line.
      //System.out.println(listOfPrimes(input)); 
+   }
+   
+   public static void main(String[] args) {
+	   ArrayListUI frame = new ArrayListUI();
+		frame.setVisible(true);
    }
 }

@@ -3,7 +3,6 @@ package control_linklist;
 import model_linklist.Stack;
 import view.linkedListUI;
 
-//ill fix this tonight
 public class playerStats {
 	private Stack mystack;
 	private int playercount = 0;
@@ -15,12 +14,6 @@ public class playerStats {
 		mystack = new Stack();
 	}
 
-	/**
-	 * Creates a series of user defined objects and populates on Stack, any type of
-	 * object can be used, stack pushes and operations are displayed to console
-	 * 
-	 * @return
-	 */
 	@Override
 	public String toString() {
 		this.playercount = playercount;
@@ -56,11 +49,9 @@ public class playerStats {
 		return str;
 	}
 
+	//added main
 	public static void main(String[] args) {
-
-		// playerStats stack = new playerStats();
-		// stack.addPlayer();
-		// stack.showPlayer();
-		// stack.firePlayer();
+		linkedListUI frame = new linkedListUI();
+		frame.setVisible(true);
 	}
 }

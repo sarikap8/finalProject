@@ -4,6 +4,7 @@ import java.util.Random;
 
 import control.ConsoleMethods;
 import model_apexam.Question;
+import view.AP_UI;
 
 /**
  * Class which generates a few static questions about ArrayLists along with a
@@ -205,6 +206,11 @@ public class ArrayListTBQ extends Question {
 			answer = this.choiceB;
 
 		}
+	}
+	//added main
+	public static void main(String[] args) {
+		AP_UI frame = new AP_UI();
+		frame.setVisible(true);
 	}
 }
 

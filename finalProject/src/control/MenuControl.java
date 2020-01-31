@@ -1,4 +1,5 @@
-package control; 
+package control;
+
 import java.awt.EventQueue;
 
 import javax.imageio.ImageIO;
@@ -28,18 +29,87 @@ import java.io.IOException;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.Font;
-//hi
+
 public class MenuControl extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
+	public MenuControl() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		getContentPane().setBackground(new Color(176, 196, 222));
 
-	/**
-	 * Launch the application.
-	 */
+		JLabel lblNewLabel = new JLabel("Welcome to Sarika's collection of work! Please refer to the menu bar ");
+
+		getContentPane().add(lblNewLabel, BorderLayout.NORTH);
+
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		JMenu mnNewMenu = new JMenu("String Labs");
+		menuBar.add(mnNewMenu);
+
+		JMenuItem mntmPalindrom = new JMenuItem("Palindrome 3 ways");
+		mntmPalindrom.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				PalindromeUI frame = new PalindromeUI();
+				frame.setVisible(true);
+			}
+		});
+		mnNewMenu.add(mntmPalindrom);
+
+		JMenu mnSprint = new JMenu("Math Labs");
+		menuBar.add(mnSprint);
+
+		JMenuItem mntmCalculator = new JMenuItem("Calculator");
+		mntmCalculator.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Calculator frame = new Calculator();
+				frame.setVisible(true);
+			}
+		});
+		mnSprint.add(mntmCalculator);
+
+		JMenuItem mntmArrayList = new JMenuItem("ArrayList Search Algo");
+		mntmArrayList.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ArrayListUI frame = new ArrayListUI();
+				frame.setVisible(true);
+			}
+		});
+		mnNewMenu.add(mntmArrayList);
+
+		JMenuItem mntmArrayListTest = new JMenuItem("ArrayList Test");
+		mntmArrayListTest.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AP_UI frame = new AP_UI();
+				frame.setVisible(true);
+			}
+		});
+		mnNewMenu.add(mntmArrayListTest);
+
+		JMenuItem mntmJumpers = new JMenuItem("Jumpers");
+		mntmJumpers.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jumperGUI frame = new jumperGUI();
+				frame.setVisible(true);
+
+			}
+		});
+		mnNewMenu.add(mntmJumpers);
+
+		JMenuItem mntmPlayerStatsLinked = new JMenuItem("Player Stats Linked List");
+		mntmPlayerStatsLinked.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				linkedListUI frame = new linkedListUI();
+				frame.setVisible(true);
+			}
+		});
+		mnNewMenu.add(mntmPlayerStatsLinked);
+
+	}
+
+	// added main
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -53,86 +123,4 @@ public class MenuControl extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
-	public MenuControl() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		getContentPane().setBackground(new Color(176, 196, 222));
-		
-		JLabel lblNewLabel = new JLabel("Welcome to Sarika's collection of work! Please refer to the menu bar ");
-		
-		getContentPane().add(lblNewLabel, BorderLayout.NORTH);
-		
-		
-		
-		JMenuBar menuBar = new JMenuBar();
-		setJMenuBar(menuBar);
-		
-
-		
-		JMenu mnNewMenu = new JMenu("String Labs");
-		menuBar.add(mnNewMenu);
-		
-		JMenuItem mntmPalindrom = new JMenuItem("Palindrome 3 ways");
-		mntmPalindrom.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				PalindromeUI frame = new PalindromeUI();
-				frame.setVisible(true);			
-			}
-		});
-		mnNewMenu.add(mntmPalindrom);
-		
-		
-		JMenu mnSprint = new JMenu("Math Labs");
-		menuBar.add(mnSprint);
-		
-		JMenuItem mntmCalculator = new JMenuItem("Calculator");
-		mntmCalculator.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Calculator frame = new Calculator();
-				frame.setVisible(true);			
-			}
-		});
-		mnSprint.add(mntmCalculator);
-		
-		JMenuItem mntmArrayList = new JMenuItem("ArrayList Search Algo");
-		mntmArrayList.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				ArrayListUI frame = new ArrayListUI();
-				frame.setVisible(true);			
-			}
-		});
-		mnNewMenu.add(mntmArrayList);
-		
-		JMenuItem mntmArrayListTest = new JMenuItem("ArrayList Test");
-		mntmArrayListTest.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				AP_UI frame = new AP_UI(); 
-				frame.setVisible(true);
-			}
-		});
-		mnNewMenu.add(mntmArrayListTest);
-		
-		JMenuItem mntmJumpers = new JMenuItem("Jumpers");
-		mntmJumpers.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				jumperGUI frame = new jumperGUI(); 
-				frame.setVisible(true); 
-				
-			}
-		});
-		mnNewMenu.add(mntmJumpers);
-		
-		JMenuItem mntmPlayerStatsLinked = new JMenuItem("Player Stats Linked List");
-		mntmPlayerStatsLinked.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				linkedListUI frame = new linkedListUI(); 
-				frame.setVisible(true);
-			}
-		});
-		mnNewMenu.add(mntmPlayerStatsLinked);
-
 }
-	}
