@@ -1,7 +1,10 @@
-package finalProject;
+package model_arraylist;
 
 import java.util.ArrayList;
 import java.util.Random;
+
+import control.ConsoleMethods;
+import model_apexam.Question;
 
 
 public class ArrayListRandom extends Question {

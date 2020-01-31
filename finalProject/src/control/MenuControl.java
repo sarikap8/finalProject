@@ -1,4 +1,4 @@
-package finalProject; 
+package control; 
 import java.awt.EventQueue;
 
 import javax.imageio.ImageIO;
@@ -13,6 +13,13 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import javax.swing.SwingConstants;
+
+import view.AP_UI;
+import view.ArrayListUI;
+import view.PalindromeUI;
+import view.jumperGUI;
+import view.linkedListUI;
+
 import javax.swing.JPanel;
 import java.awt.Canvas;
 import java.awt.event.MouseMotionAdapter;
@@ -121,7 +128,7 @@ public class MenuControl extends JFrame {
 		JMenuItem mntmPlayerStatsLinked = new JMenuItem("Player Stats Linked List");
 		mntmPlayerStatsLinked.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				playerStats frame = new playerStats(); 
+				linkedListUI frame = new linkedListUI(); 
 				frame.setVisible(true);
 			}
 		});

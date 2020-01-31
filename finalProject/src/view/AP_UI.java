@@ -1,4 +1,4 @@
-package finalProject;
+package view;
 
 
 import java.awt.BorderLayout;
@@ -7,6 +7,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import control.MenuControl;
+import model_apexam.Question;
+import model_arraylist.ArrayListRandom;
+import model_arraylist.ArrayListTBQ;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -55,7 +60,7 @@ public class AP_UI extends MenuControl {
 
         btnArrayList.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    finalProject.Question q = new finalProject.ArrayListTBQ();
+                    model_apexam.Question q = new model_arraylist.ArrayListTBQ();
                     testQuestion.setText(q.getQuestion());
                     testChoices.setText(q.getChoices());
                     testQuestionAnswer.setText(q.getAnswer());
@@ -65,7 +70,7 @@ public class AP_UI extends MenuControl {
         JButton btnNewRandom = new JButton("New Random");
         btnNewRandom.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		finalProject.Question q = new finalProject.ArrayListRandom(); 
+        		model_apexam.Question q = new model_arraylist.ArrayListRandom(); 
                 testQuestion.setText(q.getQuestion());
                 testChoices.setText(q.getChoices());
                 testQuestionAnswer.setText(q.getAnswer());

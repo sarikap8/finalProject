@@ -1,4 +1,6 @@
-package finalProject;
+package model_minilabs;
+
+import control.ConsoleMethods;
 
 public class OGJumperCode {
     public static String runTheSong(int input, String jumper) {

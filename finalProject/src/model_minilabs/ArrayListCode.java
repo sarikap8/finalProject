@@ -1,4 +1,4 @@
-package finalProject;
+package model_minilabs;
 /**
  * Completed Lab Week of November 10th, 2019
  *

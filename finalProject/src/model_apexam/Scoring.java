@@ -1,6 +1,6 @@
-package finalProject;
+package model_apexam;
 
-import finalProject.Scoring;
+import model_apexam.Scoring;
 
 /**
  * Keeps score

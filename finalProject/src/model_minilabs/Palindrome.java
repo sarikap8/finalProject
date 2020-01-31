@@ -1,4 +1,7 @@
-package finalProject; 
+package model_minilabs;
+
+import control.ConsoleMethods;
+
 /* used Mr. M's code to implement algorithm with my own GUI */
 public class Palindrome
 {

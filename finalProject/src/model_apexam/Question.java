@@ -1,6 +1,8 @@
-package finalProject;
+package model_apexam;
 
 import java.util.Random;
+
+import control.ConsoleMethods;
 
 /**
  * Question class is intended to support asking question on test
@@ -123,7 +125,7 @@ public class Question extends Scoring
      * @param  void
      * @return void
      */
-    protected void  askQuestionConsole()
+    public void  askQuestionConsole()
     {
         // getAnswer return true if question is correct
         updateCounters ( getAnswerConsole() );

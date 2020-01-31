@@ -1,4 +1,4 @@
-package finalProject;
+package view;
 
 /**
  * UI for countdown song lab
@@ -16,6 +16,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
+
+import control.MenuControl;
+import model_minilabs.OGJumperCode;
+
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;

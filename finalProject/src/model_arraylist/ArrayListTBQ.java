@@ -1,6 +1,9 @@
-package finalProject;
+package model_arraylist;
 
 import java.util.Random;
+
+import control.ConsoleMethods;
+import model_apexam.Question;
 
 /**
  * Class which generates a few static questions about ArrayLists along with a

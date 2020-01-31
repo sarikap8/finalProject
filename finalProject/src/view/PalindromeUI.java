@@ -1,4 +1,4 @@
-package finalProject;
+package view;
 
 /**
  * UI to support pallindrome evaluation
@@ -15,6 +15,10 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import control.MenuControl;
+import model_minilabs.Palindrome;
+
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
