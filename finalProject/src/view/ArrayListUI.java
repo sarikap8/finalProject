@@ -19,6 +19,8 @@ import javax.swing.border.EmptyBorder;
 
 import control.MenuControl;
 import model_minilabs.ArrayListCode;
+import model_minilabs.Sort;
+import model_minilabs.Sort.ListType;
 
 import java.awt.GridLayout;
 import javax.swing.JButton;
@@ -38,7 +40,7 @@ public class ArrayListUI extends MenuControl {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField integer_input;
+	public static JTextField integer_input;
 	private JTextArea integer_result;
 	private JLabel lblLookAtResulting;
 	private JScrollPane scrollPane;
@@ -84,10 +86,9 @@ public class ArrayListUI extends MenuControl {
 		JButton btnTestPrime = new JButton("Test");
 		btnTestPrime.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
-				integer_result.setText(
-						ArrayListCode.labSolution(Integer.parseInt(integer_input.getText()))
-						);
+				Sort is = new Sort(); 
+		        is.listType = ListType.Selection;
+				integer_result.setText(is.toString());
 			}
 		});
 		btnTestPrime.setBounds(152, 49, 145, 29);
